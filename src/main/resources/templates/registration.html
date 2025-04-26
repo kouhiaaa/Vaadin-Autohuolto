@@ -1,0 +1,19 @@
+<!-- registration.html -->
+<form th:action="@{/register}" method="post" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+    </div>
+    <div>
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="USER">User</option>
+            <option value="ADMIN">Admin</option>
+        </select>
+    </div>
+    <button type="submit">Register</button>
+</form>

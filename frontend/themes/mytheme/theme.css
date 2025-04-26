@@ -1,0 +1,35 @@
+.highlight {
+    color: crimson;
+    font-weight: bold;
+}
+:root {
+    --primary-background-color: white;
+    --primary-text-color: black;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-background-color: #121212;
+        --primary-text-color: #e0e0e0;
+    }
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+vaadin-button {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute; /* Make sure it stays at the bottom */
+    bottom: 0;
+    left: 0; /* Align to the left */
+}
